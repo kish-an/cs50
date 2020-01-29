@@ -1,0 +1,7 @@
+prompt user for a positive integer between 1-8
+WHILE integer is negative OR out of bounds
+  re-prompt user for an integer
+LOOP from 1 to height
+  LOOP to print (height - i) + 1 spaces
+  LOOP to print i + 1 number of hashes
+  print new line
