@@ -1,0 +1,31 @@
+img {
+    border-radius: 5px;
+}
+
+.card {
+    padding: 0.2rem;
+    max-width: 75rem;
+}
+
+.col {
+    padding: 1rem;
+}
+
+.btn {
+    background-color: rgb(188, 154, 212);
+    border: 1px solid rgb(188, 154, 212);
+    color: #2f3640;
+    transition: filter 0.4s ease;
+}
+
+.btn:hover {
+    background-color: rgb(188, 154, 212);
+    border: 1px solid rgb(188, 154, 212);
+    color: #2f3640;
+    filter: saturate(200%);
+}
+
+.quote {
+    display: block;
+    font-style: italic;
+}

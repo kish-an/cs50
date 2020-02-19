@@ -1,0 +1,87 @@
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    margin: 3rem;
+}
+
+.row p {
+    padding: 1rem;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-left: 0.5rem;
+    transition: all 0.2s;
+}
+
+.fa {
+    padding: 20px;
+    width: 70px;
+    text-align: center;
+    text-decoration: none;
+    transition: all 0.2s;
+    border-radius: 10px;
+}
+
+.social .fa {
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa:hover~.row-text {
+    transform: scale(1.1);
+}
+
+.fa-facebook {
+    background: #3B5998;
+}
+
+.fa-youtube {
+    background: #d82727;
+}
+
+.fa-instagram {
+    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+}
+
+.fa-quora {
+    background: #b92b27;
+}
+
+.fa-snapchat {
+    background: #ffe700;
+}
+
+.fa-twitter {
+    background: #1DA1F2;
+}
+
+.fa-discord {
+    background: #7289DA;
+}
+
+.fa-discord img {
+    width: 35px;
+}

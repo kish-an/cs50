@@ -1,0 +1,119 @@
+html, body {
+    height: 100%;
+}
+
+.header {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    z-index: 10;
+    top: 30%;
+    left: 50%;
+    text-align: center;
+}
+
+.header__title {
+    font-family: 'Montserrat';
+    font-size: 9rem;
+    font-weight: 500;
+}
+
+/*
+table td,th {
+    border: 2px solid white;
+    border-collapse: collapse;
+    padding: 0.3rem;
+}
+
+table {
+    transform: scale(0.8);
+}
+*/
+
+.header__title--emphasis {
+    font-weight: 700;
+}
+
+.header__subtitle {
+    font-family: 'Fira Mono';
+}
+
+.header__subtitle--command {
+    color: rgb(188, 154, 212);
+}
+
+.cs50__staff {
+    height: auto;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+}
+
+.cs50__staff img {
+
+    display: inline-block;
+    max-width: 100%;
+    height: 350px;
+    -webkit-transition: 0.4s transform ease;
+    -moz-transition: 0.4s transform ease;
+    -ms-transition: 0.4s transform ease;
+    -o-transition: 0.4s transform ease;
+    transition: 0.4s transform ease;
+}
+
+.cs50__staff img:hover {
+    transform: scale(1.05) translateY(3%);
+}
+
+
+@media only screen and (max-width: 1260px) {
+    .cs50__staff .colten {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 970px) {
+    .cs50__staff .brian {
+        display: none;
+    }
+
+     .header__title {
+        font-size: 7rem;
+    }
+
+    .header__subtitle {
+        font-size: 1.8rem;
+    }
+}
+
+@media only screen and (max-width: 605px) {
+    .cs50__staff .doug {
+        display: none;
+    }
+
+    .header__title {
+        font-size: 5rem;
+    }
+
+    .header__subtitle {
+        font-size: 1.4rem;
+    }
+}
+
+/*.cs50__staff .david {*/
+/*    max-height: 440px;*/
+/*    margin-bottom: -5rem;*/
+/*}*/
+
+/*.cs50__staff .doug {*/
+/*    max-height: 360px;*/
+/*}*/
+
+/*.cs50__staff .colten {*/
+/*    max-height: 360px;*/
+/*}*/
+
+/*.cs50__staff .brian {*/
+/*    max-height: 360px;*/
+/*}*/

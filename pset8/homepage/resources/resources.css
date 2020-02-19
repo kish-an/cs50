@@ -1,0 +1,13 @@
+main {
+    text-align: center;
+}
+
+.container.resource-list {
+    width: 40rem;
+    display: inline-block;
+    padding: 0;
+}
+
+.card {
+    margin: 1.5rem;
+}
