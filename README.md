@@ -15,7 +15,7 @@
 
 - Hello, world!
 - Mario
-  > Implementing a greedy algorithim to minimize the number of coins you’re dispensing as change for each customer.
+> Implementing a greedy algorithim to minimize the number of coins you’re dispensing as change for each customer.
 - Cash
 
 ### Pset2 - Arrays (C)
@@ -37,7 +37,7 @@
 > Implementing a program that filters images with popular filters such as sepia, blur and grayscale.
 
 - Filter
-  > Implementing a program that recovers JPEGs from a forensic image.
+> Implementing a program that recovers JPEGs from a forensic image.
 - Recover
 
 ### Pset5 - Data Structures (C)
@@ -52,7 +52,7 @@
 - Mario
 - Cash
 - Readability
-  > Implementing a program that identifies a person based on their DNA from [Short Tandem Repeats](https://en.wikipedia.org/wiki/STR_analysis) (STRs)
+> Implementing a program that identifies a person based on their DNA from [Short Tandem Repeats](https://en.wikipedia.org/wiki/STR_analysis) (STRs)
 - DNA
 
 ### Pset7 - Introduction to SQL (SQLite)
