@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Register
+{% endblock %}
+
+{% block main %}
+    <form action="/register" method="post" id="registration">
+        <div class="form-group">
+            <input autocomplete="off" autofocus name="username" id="username" type="text" placeholder="Username" class="form-control">
+        </div>
+        <div class="form-group">
+            <input type="password" name="password" placeholder="Password" class="form-control">
+        </div>
+       <div class="form-group">
+            <input type="password" name="confirmation" placeholder="Confirm password" class="form-control">
+            <small class="form-text text-muted">Please re-enter your password.</small>
+        </div>
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+
+    <script>
+        const form = document.querySelector('#registration');
+
+        // Send POST request to Flask API route and check if username exists in database
+        form.addEventListener('submit', (e) => {
+            // Prevent page from refreshing
+            e.preventDefault();
+
+            const username = document.getElementById('username').value;
+
+            fetch('/username-availability', {
+               method: 'POST',
+               mode: 'same-origin',
+               headers: {
+                   'Content-Type': 'application/json',
+               },
+               body: JSON.stringify(username),
+            })
+                .then(res => res.json())
+                .then(({ available }) => {
+                    //  Alert the user if username is not available
+                    if (!available || username === '')
+                        alert('Username not available');
+                    else
+                        // Continue normal behaviour of the form (reverse e.preventDefault)
+                        e.target.submit();
+
+                });
+        });
+    </script>
+{% endblock %}

@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Portfolio
+{% endblock %}
+
+{% block main %}
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Name</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">TOTAL</th>
+            </tr>
+        </thead>
+        <tbody>
+           {% for key in shares.keys() %}
+               {% if shares[key] > 0 %}
+                   {% set stock = lookup(key) %}
+                    <tr>
+                        <td>{{ key }}</td>
+                        <td>{{ stock["name"] }}</td>
+                        <td>{{ shares[key] }}</td>
+                        <td>{{ usd(stock["price"]) }}</td>
+                        <td>{{ usd(stock["price"] * shares[key]) }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+            <tr>
+                <td>CASH</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>{{ usd(cash) }}</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4"></th>
+                <td style="font-weight: bold;">{{ usd(balance) }}</td>
+            </tr>
+        </tfoot>
+    </table>
+{% endblock %}

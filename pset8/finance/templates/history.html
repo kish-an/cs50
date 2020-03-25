@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    History
+{% endblock %}
+
+{% block main  %}
+    <table class="table table-striped">
+        <thead class="thead-dark">
+            <tr>
+                <th scope="col">Symbol</th>
+                <th scope="col">Shares</th>
+                <th scope="col">Price</th>
+                <th scope="col">Transacted</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for transaction in history %}
+                <tr>
+                    <td>{{ transaction["symbol"] }}</th>
+                    <td>{{ "-" if transaction["type"] == 'sold' else "" }}{{ transaction["amount"] }}</td>
+                    <td>{{ usd(transaction["price"]) }}</td>
+                    <td>{{ transaction["timestamp"] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock  %}

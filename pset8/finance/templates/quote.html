@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title  %}
+    Quote
+{% endblock  %}
+
+{% block main %}
+    <form action="/quote" method="post">
+        <div class="form-group">
+            <input type="text" name="symbol" placeholder="Symbol" class="form-control" autofocus>
+            <small class="form-text text-muted">Please enter a <a href="http://www.nasdaqtrader.com/trader.aspx?id=symbollookup" target="_blank"> NASDAQ symbol</a></small>
+        </div>
+        <button class="btn btn-primary" type="submit">Quote</button>
+    </form>
+{% endblock %}

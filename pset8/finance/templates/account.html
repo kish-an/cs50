@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Account
+{% endblock %}
+
+{% block main %}
+    <h3 class="account-name" style="font-weight: 200;">Account settings for <span style="font-weight: 600;">{{ user }}</span></h3>
+
+    <div class="account-settings">
+        <button name="cash" class="btn btn-lg btn-primary">
+            <a href="/cash">Add cash</a>
+        </button>
+    </div>
+{% endblock %}
