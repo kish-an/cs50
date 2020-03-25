@@ -3,7 +3,7 @@
     <h1>Harvards CS50: Introduction to Computer Science</h1>
 </div>
 
-> A quick word on [Academic Honesty](https://cs50.harvard.edu/x/2020/syllabus/#academic-honesty). While my solutions are provided for each problem set, you should do your best to figure out a working solution yourself before taking a look at any answers. There are many great communities for support and help, such as [CS50 Stack Exchange](https://cs50.stackexchange.com/), the [CS50 Subreddit](https://www.reddit.com/r/cs50/) and the [CS50 Slack](http://cs50.edx.org/slack) to name a few. Investing your time and energy into solving each and every problem set indepdently is, in my opinion, the best way to experience the course and the only way to eventual mastery.
+> Please keep in mind [Academic Honesty](https://cs50.harvard.edu/x/2020/syllabus/#academic-honesty). There are many great communities for support and help, such as [CS50 Stack Exchange](https://cs50.stackexchange.com/), the [CS50 Subreddit](https://www.reddit.com/r/cs50/) and the [CS50 Slack](http://cs50.edx.org/slack) to name a few. Investing your time and energy into solving each and every problem set indepdently is the best way to experience the course and the only way to eventual mastery.
 
 ## Problem Sets
 
@@ -13,10 +13,10 @@
 
 ### Pset1 - Introduction to C (C)
 
-- [Hello, world!](pset1/hello)
-- [Mario](pset1/mario)
+- [Hello, world!](pset1/hello/hello.c)
+- [Mario](pset1/mario/mario.c)
 > Implementing a greedy algorithim to minimize the number of coins you’re dispensing as change for each customer.
-- [Cash](pset1/cash)
+- [Cash](pset1/cash/cash.c)
 
 ### Pset2 - Arrays (C)
 
@@ -60,6 +60,8 @@
 - [Movies](pset7/movies)
 - [Houses](pset7/houses/roster.py)
 
-### Web Track (HTML, CSS, JavaScript, Flask)
+### Web Track (HTML, CSS, JavaScript, Flask, SQLite)
 
 - [Homepage](pset8/homepage)
+> Implementing a full stack web application in which users can simulate investing into stocks, including user registration and real time stock prices.
+- [Finance](pset8/finance)
